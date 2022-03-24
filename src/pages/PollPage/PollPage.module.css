@@ -35,3 +35,7 @@ label {
   font-size: 24px;
   width: 90%;
 }
+
+form {
+  width: 80%;
+}

@@ -22,7 +22,7 @@
 }
 
 .card:hover .icon {
-  box-shadow: 0 0 10px red;
+  box-shadow: 0 0 10px #ff4c29;
 }
 
 .card p {
@@ -44,7 +44,7 @@
 .card::after {
   content: '';
   position: absolute;
-  background: #171717;
+  background: #082032;
   width: 100%;
   height: 40%;
   z-index: -10;
@@ -68,7 +68,7 @@
 .icon {
   width: 60px;
   height: 60px;
-  background: #da0037;
+  background: #ff4c29;
   display: flex;
   justify-content: center;
   align-items: center;

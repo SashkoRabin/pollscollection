@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <Link to="/" className="header">
-      <header>Polls collection</header>
+      <header>Polls collection - лучшие опросы и тесты</header>
     </Link>
   );
 };

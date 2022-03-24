@@ -1,6 +1,7 @@
 import React from 'react';
 import Polls from './components/Polls/Polls';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 const MainPage = () => {
   return (
@@ -17,6 +18,7 @@ const MainPage = () => {
         <br />
         <Polls />
       </article>
+      <Footer />
     </div>
   );
 };
