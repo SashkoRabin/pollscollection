@@ -1,0 +1,9 @@
+{
+  "name": "Merkulov Alexandr Resume",
+  "short_name": "Resume",
+  "theme_color": "#cd6f2f",
+  "background_color": "#2b2b2b",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "./build/"
+}

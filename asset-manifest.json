@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pollscollection/static/css/main.a8ed2233.css",
+    "main.js": "/pollscollection/static/js/main.edaf0efc.js",
+    "index.html": "/pollscollection/index.html",
+    "main.a8ed2233.css.map": "/pollscollection/static/css/main.a8ed2233.css.map",
+    "main.edaf0efc.js.map": "/pollscollection/static/js/main.edaf0efc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8ed2233.css",
+    "static/js/main.edaf0efc.js"
+  ]
+}
