@@ -1,0 +1,51 @@
+.wrapper {
+  width: 100%;
+  background: #610094;
+  min-height: 100vh;
+}
+.homeButton {
+  width: 250px;
+  outline: none;
+  height: 30px;
+  font-size: 18px;
+  margin: 10px;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.homeButton:hover {
+  text-decoration: underline;
+}
+
+.res_wrapper {
+  width: 60%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 1.5px 14px rgba(0, 0, 0, 0.132),
+    0px 4.1px 38.7px rgba(0, 0, 0, 0.19), 0px 9.9px 93.2px rgba(0, 0, 0, 0.248),
+    0px 33px 309px rgba(0, 0, 0, 0.38);
+}
+
+.wow {
+  text-align: center;
+}
+
+.result {
+  padding: 20px;
+}
+
+span {
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.res_wrapper i {
+  display: inline !important;
+  margin-right: 10px;
+}

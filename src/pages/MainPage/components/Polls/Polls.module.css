@@ -1,7 +1,7 @@
 .polls_wrapper {
   display: flex;
   justify-content: flex-start;
-  min-height: 54vh;
+  min-height: 57vh;
 }
 
 .card {
@@ -33,6 +33,20 @@
   transition: all 0.4s;
 }
 
+.warning {
+  margin: 20px 0;
+  padding: 0 25px;
+  color: rgb(201, 19, 19);
+  font-size: 16px;
+  text-align: left;
+}
+
+.available_polls {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .card:hover p {
   display: block;
   opacity: 1;
@@ -44,7 +58,7 @@
 .card::after {
   content: '';
   position: absolute;
-  background: #082032;
+  background: #3f0071;
   width: 100%;
   height: 40%;
   z-index: -10;
@@ -77,6 +91,11 @@
 
 .icon i {
   font-size: 1.5em;
+}
+
+.main_wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media (max-width: 500px) {

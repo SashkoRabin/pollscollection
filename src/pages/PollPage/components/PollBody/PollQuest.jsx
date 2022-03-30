@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import cl from '../../PollPage.module.css';
 
 const PollQuest = ({
@@ -34,13 +35,23 @@ const PollQuest = ({
   };
 
   return (
-    <div className="poll">
-      <h3>
+    <div className={cl.poll_wrapper}>
+      <h3 className={cl.questNumber}>
         Вопрос {questIndex + 1} из {totalQuest}
       </h3>
-      <button onClick={backHandler} className={cl.backButton}>
-        <i className="fa-solid fa-arrow-left"></i>Вернуться к вопросу
-      </button>
+      <div className={cl.button_wrapper}>
+        {questIndex ? (
+          <button onClick={backHandler} className={cl.backButton}>
+            <i className="fa-solid fa-arrow-left"></i>Вернуться к вопросу
+          </button>
+        ) : (
+          <i className="fa-solid fa-face-smile"></i>
+        )}
+        <Link to="*" className={cl.homeButton}>
+          <i className="fa-solid fa-house"></i>На главную
+        </Link>
+      </div>
+
       <form ref={form} className={cl.quest}>
         <p>{quest}</p>
         <span className={cl.option}>
