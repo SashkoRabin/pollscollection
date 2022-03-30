@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import cl from '../../PollPage.module.css';
 
 const PollQuest = ({
+  score,
   setScore,
   questIndex,
   setQuestIndex,
@@ -14,6 +15,7 @@ const PollQuest = ({
 
   const clickHandler = (e) => {
     e.preventDefault();
+
     const data = new FormData(form.current);
     let value = '';
     for (const entry of data) {
@@ -21,7 +23,14 @@ const PollQuest = ({
     }
     if (!value && value !== 0) return;
     setQuestIndex((prev) => prev + 1);
-    setScore((prev) => prev + value);
+    setScore([...score, value]);
+  };
+
+  const backHandler = () => {
+    if (questIndex) {
+      score.length = score.length - 1;
+      setQuestIndex((prev) => prev - 1);
+    }
   };
 
   return (
@@ -29,8 +38,11 @@ const PollQuest = ({
       <h3>
         Вопрос {questIndex + 1} из {totalQuest}
       </h3>
+      <button onClick={backHandler} className={cl.backButton}>
+        <i className="fa-solid fa-arrow-left"></i>Вернуться к вопросу
+      </button>
       <form ref={form} className={cl.quest}>
-        <h1>{quest}</h1>
+        <p>{quest}</p>
         <span className={cl.option}>
           <input type="radio" name="quest" id={radioID1} value="1" />
           <label htmlFor={radioID1}>Да</label>

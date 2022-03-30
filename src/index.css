@@ -8,6 +8,19 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #2c394b;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: #6f7986;
+}
+
 .App {
   width: 90%;
   margin: 0 auto;
@@ -51,4 +64,10 @@
 }
 .footer span {
   margin: 0 5px;
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 18px;
+  }
 }

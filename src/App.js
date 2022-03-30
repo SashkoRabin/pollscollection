@@ -1,6 +1,7 @@
 import SiteRouter from './utils/SiteRouter/SiteRouter';
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <SiteRouter />

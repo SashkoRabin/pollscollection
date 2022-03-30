@@ -1,7 +1,7 @@
 .polls_wrapper {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  min-height: 54vh;
 }
 
 .card {
@@ -77,4 +77,15 @@
 
 .icon i {
   font-size: 1.5em;
+}
+
+@media (max-width: 500px) {
+  .polls_wrapper {
+    display: block;
+    min-height: 60vh;
+  }
+
+  .card {
+    margin: 10px auto;
+  }
 }

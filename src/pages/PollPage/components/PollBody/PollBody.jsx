@@ -39,23 +39,25 @@ const PollBody = ({ id }) => {
     ],
   ];
   const [questIndex, setQuestIndex] = useState(0);
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState([]);
+  let summ = 0;
   if (questIndex >= questions[id].length) {
+    score.forEach((i) => (summ += i));
     if (id == 0) {
       let temper = '';
-      if (score >= 0) temper = 'Флегматик';
-      if (score >= 3) temper = 'Сангвиник';
-      if (score >= 6) temper = 'Меланхолик';
-      if (score >= 10) temper = 'Холерик';
+      if (summ >= 0) temper = 'Флегматик';
+      if (summ >= 3) temper = 'Сангвиник';
+      if (summ >= 6) temper = 'Меланхолик';
+      if (summ >= 10) temper = 'Холерик';
       return (
         <>
-          <h2>Вас счёт = {score}</h2>
+          <h2>Вас счёт = {summ}</h2>
           <h1>Вы: {temper}</h1>
         </>
       );
     }
     if (id == 1) {
-      const age = score * 6;
+      const age = summ * 6;
       return (
         <>
           <h1>Вам {age}!!!</h1>
@@ -74,6 +76,7 @@ const PollBody = ({ id }) => {
         setQuestIndex={setQuestIndex}
         quest={questions[id][questIndex]}
         setScore={setScore}
+        score={score}
       />
     </div>
   );

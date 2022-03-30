@@ -8,6 +8,7 @@ const SiteRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="*" element={<MainPage />} />
         <Route path="poll" element={<PollPage />} />
       </Routes>
     </BrowserRouter>
