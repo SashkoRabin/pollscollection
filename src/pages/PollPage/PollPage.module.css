@@ -2,6 +2,7 @@
   width: 100%;
   background: #610094;
   min-height: 100vh;
+  text-shadow: -1px 1px 6px rgba(0, 0, 0, 0.36);
 }
 
 .poll_wrapper {
@@ -32,11 +33,12 @@
 
 .backButton,
 .homeButton {
-  width: 250px;
+  width: 200px;
   outline: none;
   height: 30px;
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px;
+  font-weight: 700;
   text-align: left;
   border-radius: 10px;
   border: none;
@@ -44,6 +46,7 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+  text-shadow: -1px 1px 6px rgba(0, 0, 0, 0.36);
 }
 .homeButton:hover {
   text-decoration: underline;
@@ -52,7 +55,7 @@
 .backButton i,
 .homeButton i {
   display: inline !important;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0 5px;
 }
 

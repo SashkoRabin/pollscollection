@@ -2,6 +2,7 @@
   width: 100%;
   background: #610094;
   min-height: 100vh;
+  text-shadow: -1px 1px 6px rgba(0, 0, 0, 0.36);
 }
 .homeButton {
   width: 250px;

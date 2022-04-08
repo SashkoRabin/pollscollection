@@ -18,7 +18,7 @@ const Footer = () => {
             <i className="fa-brands fa-github"></i>
           </a>
         </span>
-        <span>
+        <span className="phone_footer">
           <i className="fa-solid fa-phone"></i>
           +38(095)-163-2772
         </span>
