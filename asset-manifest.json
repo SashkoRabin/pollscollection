@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pollscollection/static/css/main.60138343.css",
-    "main.js": "/pollscollection/static/js/main.efd0efb2.js",
+    "main.css": "/pollscollection/static/css/main.d8043b77.css",
+    "main.js": "/pollscollection/static/js/main.d81ac4f3.js",
     "index.html": "/pollscollection/index.html",
-    "main.60138343.css.map": "/pollscollection/static/css/main.60138343.css.map",
-    "main.efd0efb2.js.map": "/pollscollection/static/js/main.efd0efb2.js.map"
+    "main.d8043b77.css.map": "/pollscollection/static/css/main.d8043b77.css.map",
+    "main.d81ac4f3.js.map": "/pollscollection/static/js/main.d81ac4f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.60138343.css",
-    "static/js/main.efd0efb2.js"
+    "static/css/main.d8043b77.css",
+    "static/js/main.d81ac4f3.js"
   ]
 }
