@@ -4,10 +4,10 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import cl from './components/Polls/Polls.module.css';
 
-const MainPage = () => {
+const MainPage = ({ authorized, setAuthorized }) => {
   return (
     <div className={cl.main_wrapper}>
-      <Header />
+      <Header authorized={authorized} setAuthorized={setAuthorized} />
       <article>
         <p className={cl.warning}>
           <strong>ВНИМАНИЕ!!!</strong> Результаты опросов созданы лишь в

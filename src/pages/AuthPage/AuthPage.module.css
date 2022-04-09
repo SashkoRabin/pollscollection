@@ -1,0 +1,177 @@
+.wrapper {
+  width: 100%;
+  background: #610094;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.formCollection {
+  width: 45%;
+  padding: 40px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0px 1.5px 14px rgba(0, 0, 0, 0.132),
+    0px 4.1px 38.7px rgba(0, 0, 0, 0.19), 0px 9.9px 93.2px rgba(0, 0, 0, 0.248),
+    0px 33px 309px rgba(0, 0, 0, 0.38);
+  border-radius: 20px;
+}
+
+.input_group_password,
+.input_group_email,
+.input_group_name {
+  background: #f1f1f1;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+.input_group_password input,
+.input_group_email input,
+.input_group_name input {
+  margin-left: 10px;
+  width: 85%;
+  border: none;
+  padding: 15px 0;
+
+  background: #f1f1f1;
+}
+.input_group_password input:focus,
+.input_group_email input:focus,
+.input_group_name input:focus {
+  outline: none;
+  border: none;
+}
+
+.formCollection i {
+  display: inline !important;
+}
+
+.homeButton {
+  display: block;
+  width: 200px;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  margin: 0 auto 30px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  text-shadow: -1px 1px 6px rgba(0, 0, 0, 0.36);
+}
+
+.homeButton:hover {
+  text-decoration: underline;
+}
+
+.hasAcc {
+  width: auto;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  padding: 5px;
+  border: none;
+  background: white;
+  display: inline;
+}
+
+.alert_message {
+  display: none;
+  background: linear-gradient(to right, rgb(250, 117, 117) 70%, white);
+  font-weight: 400;
+  color: rgb(29, 29, 29);
+  padding: 5px;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+    background: #610094;
+    min-height: 100vh;
+    padding: 40px;
+  }
+
+  .formCollection {
+    width: 90%;
+    padding: 40px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 1.5px 14px rgba(0, 0, 0, 0.132),
+      0px 4.1px 38.7px rgba(0, 0, 0, 0.19),
+      0px 9.9px 93.2px rgba(0, 0, 0, 0.248), 0px 33px 309px rgba(0, 0, 0, 0.38);
+    border-radius: 20px;
+  }
+
+  .input_group_password,
+  .input_group_email,
+  .input_group_name {
+    background: #f1f1f1;
+    margin: 10px 0;
+    padding: 0 15px;
+  }
+  .input_group_password input,
+  .input_group_email input,
+  .input_group_name input {
+    margin-left: 10px;
+    width: 80%;
+    border: none;
+    padding: 15px 0;
+
+    background: #f1f1f1;
+  }
+  .input_group_password input:focus,
+  .input_group_email input:focus,
+  .input_group_name input:focus {
+    outline: none;
+    border: none;
+  }
+
+  .formCollection i {
+    display: inline !important;
+  }
+
+  .homeButton {
+    display: block;
+    width: 200px;
+    outline: none;
+    height: 30px;
+    font-size: 16px;
+    margin: 0 auto 30px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-shadow: -1px 1px 6px rgba(0, 0, 0, 0.36);
+  }
+
+  .homeButton:hover {
+    text-decoration: underline;
+  }
+
+  .hasAcc {
+    width: auto;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    padding: 5px;
+    border: none;
+    background: white;
+    display: inline;
+  }
+
+  .alert_message {
+    display: none;
+    background: linear-gradient(to right, rgb(250, 117, 117) 70%, white);
+    font-weight: 400;
+    color: rgb(29, 29, 29);
+    padding: 5px;
+    margin: 0 0 10px;
+  }
+}
