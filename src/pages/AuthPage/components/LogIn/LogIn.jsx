@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import Auth from '../../../../db/auth/auth';
 import cl from '../../AuthPage.module.css';
 
-const LogIn = ({ setHasAccount, setAuthorized, authorized }) => {
+const LogIn = ({ setLoginSign, setHasAccount, setAuthorized, authorized }) => {
   const emailInput = useRef('');
   const passwordInput = useRef('');
   const [alertText, setAlertText] = useState('');
@@ -31,6 +31,7 @@ const LogIn = ({ setHasAccount, setAuthorized, authorized }) => {
 
     if (current.length > 0) {
       await setAuthorized((prev) => !prev);
+      setLoginSign(current[0].email);
     } else {
       showAlert('Введены неверные данные!');
     }

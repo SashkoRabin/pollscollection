@@ -4,9 +4,8 @@ import SignUp from './components/SignUp/SignUp';
 import cl from './AuthPage.module.css';
 import { Link } from 'react-router-dom';
 
-const AuthPage = ({ authorized, setAuthorized }) => {
+const AuthPage = ({ setLoginSign, authorized, setAuthorized }) => {
   const [hasAccount, setHasAccount] = useState(true);
-
   return (
     <div className={cl.wrapper}>
       <div className={cl.formCollection}>
@@ -20,6 +19,7 @@ const AuthPage = ({ authorized, setAuthorized }) => {
             setHasAccount={setHasAccount}
             authorized={authorized}
             setAuthorized={setAuthorized}
+            setLoginSign={setLoginSign}
           />
         ) : (
           <SignUp setHasAccount={setHasAccount} />

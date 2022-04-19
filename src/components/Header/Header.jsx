@@ -1,23 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = ({ authorized, setAuthorized }) => {
+const Header = ({ setLoginSign, authorized, setAuthorized, loginSign }) => {
   const logout = async () => {
     await setAuthorized((prev) => !prev);
-    localStorage.setItem('authorized', authorized);
+    setLoginSign('Не авторизировано');
   };
   return (
     <div className="header">
       <header>Polls collection - лучшие опросы и тесты</header>
-      {!authorized ? (
-        <Link to="auth" className="header_signin">
-          Войти
-        </Link>
-      ) : (
-        <button className="header_signin" onClick={logout}>
-          Выйти
-        </button>
-      )}
+      <div className="header_login">
+        <p>{loginSign}</p>
+
+        {!authorized ? (
+          <Link to="auth" className="header_signin">
+            Войти
+          </Link>
+        ) : (
+          <button className="header_signin" onClick={logout}>
+            Выйти
+          </button>
+        )}
+      </div>
     </div>
   );
 };
